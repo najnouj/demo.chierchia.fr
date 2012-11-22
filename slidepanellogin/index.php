@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>AngeChierchia.com | Démonstration | Créer un panneau de Login coulissant avec jQuery</title>
+		<link rel="stylesheet" type="text/css" href="header.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".slide_btn").click(function(){
+		$("#login_panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+
+		<style type="text/css">
+		
+		</style>
+
+</head>
+<body>
+	<div id="top">
+		<a href="http://www.angechierchia.com/ajax-javascript/creer-un-panneau-de-login-coulissant-avec-jquery/">Retourner sur AngeChierchia.com</a>
+	</div><!-- Top Bar -->
+	
+	<div id="login_panel">
+	
+		<form name="login_form" id="login_form" method="post" action="" >
+			
+			<label for="username">Nom d'utilisateur:</label>
+			<input type="text" name="username" id="username" />
+			
+			<label for="password">Mot de passe:</label>
+			<input type="password" name="password" id="password" />
+			
+			<input type="submit" name="submit" id="submit" value="Connexion" />
+			
+		</form>	
+	</div><!-- #login_panel -->
+	<p class="slide"><a href="#" class="slide_btn">Se connecter</a></p>
+	
+</body>
+</html>
