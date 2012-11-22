@@ -1,0 +1,26 @@
+<html>
+<title>Notifications &agrave; la Growl &bull; Ange Chierchia</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+<body>
+	<div id="header">
+	<h1>Ange Chierchia &bull; Espace de d&eacute;monstration</h1><a class="go_back"href="http://anggge.me/1260">Retourner &agrave; l'article "Notifications &agrave; la Growl avec jQuery"</a>
+</div>
+	<div class="notify">
+		<span class="icon"></span>
+		<p>Je suis une notification. Je vais dispara&icirc;tre! Phasellus elit nunc, tristique sed sodales sit amet, tincidunt sed.</p>
+	</div>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".notify").css('display','none').delay(500).fadeIn(400).delay(5500).fadeOut(400);
+		$(".notify").hover(function(){
+			$(this).stop(true,true).fadeIn();
+		},function(){
+			$(this).stop(true,true).delay(500).fadeIn(400).delay(5500).fadeOut(400);
+		});
+	});
+	</script>
+	
+</body>
+</html>

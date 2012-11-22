@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ange Chierchia &bull Demo : Un menu Lava avec jQuery</title>
+   
+	<link rel="stylesheet" href="style.css" />
+	<!-- fichier jquery -->
+	<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+		$(function() {
+	        $("#menu").lavaLamp({
+	            fx: "backout",
+	            speed: 700,
+	            click: function(event, menuItem) {
+	                return false;
+	            }
+	        });
+	    });
+    });
+    </script>
+</head>
+<body>
+<div id="header">
+	<h1>Ange Chierchia &bull Espace de d&eacute;monstration</h1><a class="go_back"href="http://blog.angechierchia.com/ajax-javascript/menu-lava-lamp-jquery">Retourner &agrave; l'article "Un menu Lava avec jQuery"</a>
+</div>
+
+<ul id="menu">
+	<li><a href="#">Item 1</a></li>
+	<li><a href="#">Item 2</a></li>
+	<li><a href="#">Item 3</a></li>
+	<li><a href="#">Item 4</a></li>
+	<li><a href="#">Item 5</a></li>
+	<li><a href="#">Item 6</a></li>
+</ul> 
+</body> 
+</html>

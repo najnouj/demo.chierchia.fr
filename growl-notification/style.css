@@ -1,0 +1,63 @@
+body {
+	font-size: 1em;
+	line-height: 1em;
+	background: #f5f5f5 url('Lion.jpg') no-repeat top left;
+	padding: 0;
+	margin: 0;
+}
+
+#header {
+	background: #222222;
+	overflow: auto;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+#header h1 { 
+	display: inline-block;
+	color: #eaeaea;
+	font-size: 14px;
+}
+
+#header a.go_back {
+
+	float: right;
+	color: #ffffff;
+	display: inline-block;
+	padding-top: 8px;
+	font-size: 12px;
+}
+
+#header a.go_back:hover { text-decoration: none; }
+
+.notify {
+	position: absolute;
+	top: 49px; right: 8px;
+	max-width: 246px;
+	background: rgba(0,0,0,0.7); padding: 25px;
+	font-size: 0.8em; color: #fff;
+	border: 2px solid #222;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	-o-box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+	box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+	.notify:hover {
+		border: 2px solid #eee;
+	}
+	.notify p {
+		margin: 0;
+		cursor: default;
+	}
+	
+	.notify span.icon {
+		display: block;
+		width: 40px; height: 40px;
+		background: url(notify_icon.png) no-repeat;
+		position: absolute;
+		top: 10px; left: -30px;
+	}

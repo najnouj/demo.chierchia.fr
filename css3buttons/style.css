@@ -1,0 +1,100 @@
+body { 	
+	font-family: Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+
+}
+
+#header {
+	background: #222222;
+	overflow: auto;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+#header h1 { 
+	display: inline-block;
+	color: #eaeaea;
+	font-size: 14px;
+}
+
+#header a.go_back {
+
+	float: right;
+	color: #ffffff;
+	display: inline-block;
+	padding-top: 8px;
+	font-size: 12px;
+}
+
+#header a.go_back:hover { text-decoration: none; }
+
+.wrapper {
+	padding: 10px 40px 30px 40px;
+	background: #eaeaea;
+}
+.wrapper.dark {
+	background: #222222;
+}
+
+.wrapper h2 {
+	font-size: 22px;
+	color: #333333;
+	font-weight: 400;
+	position: relative;
+	margin-left: -20px;
+}
+
+.wrapper.dark h2 {
+	color: #eaeaea;
+}
+
+.button {
+
+	/* style du texte */
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1;
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.5); /* ombre décalée de 0px à droite, 1px en haut, un flou de 0px, de couleur noir et d'opacité 50% */
+
+	/* fond dégradé pour le bouton */
+	background: -moz-linear-gradient(top, #b50000, #6d0000); /* Firefox */
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#b50000), to(#6d0000)); /* Safari et Chrome*/
+	
+	/* style général du bouton */
+	display: inline-block;
+	padding: 8px 10px 8px;
+	-moz-border-radius: 4px; /* coins arrondi pour Firefox */
+	-webkit-border-radius: 4px; /* coins arrondi pour Safari et Chrome */
+	border-radius: 4px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	margin: 2px;
+}
+
+.button.medium { font-size: 12px; }
+
+.button.small { font-size: 10px; }
+
+
+.button.blue {
+	background: -moz-linear-gradient(top, #6d93c0, #3d5b78); /* Firefox */
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6d93c0), to(#3d5b78)); /* Safari et Chrome*/
+}
+
+.button:hover {
+	background: -moz-linear-gradient(top, #333333, #000000); /* Firefox */
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#000000)); /* Safari et Chrome*/
+
+}
+
+.button.arrondi {
+	-moz-border-radius: 20px; /* coins arrondi pour Firefox */
+	-webkit-border-radius: 20px; /* coins arrondi pour Safari et Chrome */
+	border-radius: 20px;
+}
